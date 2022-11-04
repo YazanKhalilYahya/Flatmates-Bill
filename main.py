@@ -82,7 +82,7 @@ print(the_bill.amount)
 print(the_bill.period)
 print(f"{name1} pays:", flatmate1.pays(the_bill, flatmate2))
 print(f"{name2} pays:", flatmate2.pays(the_bill, flatmate1))
-pdf_report = PdfReport(filename="Report1.pdf")
+pdf_report = PdfReport(filename="../Report1.pdf")
 pdf_report.generate(flatmate1, flatmate2, bill=the_bill)
 
 file_sharer = FileSharer(filepath= pdf_report.filename)
